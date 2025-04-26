@@ -5,6 +5,20 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "aws_access_key" {
+  type = string
+  description = "AWS Access Key ID"
+  sensitive = true  
+  default = "AKIAX3NVJFI7OA6EE6WX" 
+}
+
+variable "aws_secret_key" {
+  type = string
+  description = "AWS Secret Access Key"
+  sensitive = true  
+  default = "iviTpSERERrftm0ZxKgmz6vJDi8jieOPHeo2esjg" 
+}
+
 
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
